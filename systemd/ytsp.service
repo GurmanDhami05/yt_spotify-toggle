@@ -1,0 +1,11 @@
+[Unit]
+Description=Toggle Spotify when YouTube plays and pauses
+After=default.target
+
+[Service]
+ExecStart=%h/.config/yt-spotify-toggle/bin/yt_sp_toggle.sh
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+
